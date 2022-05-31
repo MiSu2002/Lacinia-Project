@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <!--Bootstrap 5.1.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome 5.3.1-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat:wght@700&family=Righteous&family=Staatliches&display=swap" rel="stylesheet">
+
+    <!--JQuery-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <title>Welcome to Lacinia</title>
+</head>
+<body>
+
+    <script src="./app.js"></script>
+
+    <nav class="nav navbar">
+    <div class="container-fluid">
+
+        <!--On smaller screens-->
+            <img class="logo image-fluid d-md-none" src="./public/logo.png" alt="logo" width="30%" height="30%">
+
+        <!--On medium screens-->
+            <img class="logo image-fluid d-none d-md-block d-lg-none" src="./public/logo.png" alt="logo" width="23%" height="30%">
+
+        <!--On larger screens-->
+            <img class="logo image-fluid d-none d-lg-block " src="./public/logo.png" alt="logo" width="13%" height="30%">
+
+        <ul class="navbar-nav ml-auto me-3">
+            <li class="nav-item">
+
+            <!--On smaller screens-->
+            <a class="nav-link small d-md-none" style="color: rgb(85, 85, 85);" href="javascript:void(0)">
+                <img src="./public/profile pic.png" class="profile me-1" width="50px" height="auto"/>
+            <img src="./public/location.png" class="location" width="30px" height="auto"/>Los Angeles
+            </a>
+
+            <!--On medium screens-->
+            <a class="nav-link small d-none d-md-block d-lg-block d-xl-none" style="color: rgb(85, 85, 85);" href="javascript:void(0)">
+                <img src="./public/profile pic.png" class="profile me-3" width="50px" height="auto"/>
+            <img src="./public/location.png" class="location" width="30px" height="auto"/>Los Angeles
+            <img src="./public/cart.png" class="cart ms-3 me-2" width="30px" height="auto"/>
+            </a>
+
+            <!--On larger screens-->
+            <a class="nav-link d-none d-xl-block" style="color: rgb(85, 85, 85);" href="javascript:void(0)">
+                <div class="container-fluid">
+                <img src="./public/profile pic.png" class="profile me-5" width="50px" height="auto"/>
+                <i class="fa-solid fa-bag-shopping me-5"></i>
+            <img src="./public/location.png" class="location" width="35px" height="auto"/>Los Angeles
+            <i class="fa-solid bag fa-bag-shopping me-5"></i>
+            <img src="./public/cart.png" class="cart ms-3 me-5" width="40px" height="auto"/>
+            </div>
+            </a>
+            </li>
+
+        </ul>
+        
+    </div>
+    </nav>
+
+    <a class="d-flex justify-content-center" style="text-decoration: none; margin-right: 2%;">
+        <i class="number me-3">34</i>
+        <i class="fa-solid fa-heart d-flex justify-content-center"></i></a>
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="30000">
+            <h1 class="animated" style="font-size: 100px; ">ORANGE</h1>
+            <img src="./public/orange.png" class="orange image-fluid d-block mx-auto" width="32%" height="auto" alt="orange">
+          </div>
+          <div class="carousel-item" data-bs-interval="30000">
+            <h1 class="animated" style="font-size: 100px; margin-left: 0">PEAR</h1>
+            <img src="./public/pear.png" class="pear d-block image-fluid mx-auto" width="18%" height="auto" alt="pear">
+          </div>
+          <div class="carousel-item" data-bs-interval="30000">
+            <h1 class="animated" style="font-size: 100px; margin-left: 0">APPLE</h1>
+            <img src="./public/apple.png" class="apple d-block image-fluid mx-auto" width="28%" height="auto" alt="apple">
+          </div>
+        </div>
+
+
+        <button class="btnn carousel-control-prev mt-5" type="button" onclick="Animation()" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span><img src="./public/left arrow.png" width="100px" height="auto"/></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+          <button class="btnn carousel-control-next mt-5" type="button" onclick="Animation()" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span><img src="./public/right arrow.png" width="100px" height="auto"/></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+            <a class="add1"><img src="./public/add.png" class="add image-fluid d-block mx-auto" width="50px" height="auto"/><p>$0.30/kg</p></a>
+            
+            <img src="./public/message.png" class="chat ms-5 mt-4" width="50px" height="auto"/>
+
+                <div class="total d-flex justify-content-end">
+                <h3>TOTAL <br> $ 68</h3>
+                </div>
+                <p class="tax d-flex justify-content-end">TAX INCLUDED</p>
+    
+</body>
+</html>
